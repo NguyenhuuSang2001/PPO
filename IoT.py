@@ -86,6 +86,9 @@ class IoT_Semantic_Wireless_Harvesting():
     def state_size(self):
         return len(self.state)
     
+    def state_shape(self):
+        return (len(self.state), )
+    
     def reset(self):
         self.start = True
         self.initialization()
